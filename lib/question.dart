@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-class Question extends StatelessWidget
-{
+class Question extends StatelessWidget {
 	// Value will never change after initialization
     final String questionText;
 
     Question(this.questionText);
 
     @override
-    Widget build(BuildContext context)
-    {
+    Widget build(BuildContext context) {
         return Container(
-			width: double.infinity,
-			margin: EdgeInsets.all(10), // add margin in all direction
-			child:Text(
-				questionText,
-				style: TextStyle(fontSize: 28),
-				textAlign: TextAlign.center,
-			),
-		);
+            width: double.infinity,
+            margin: EdgeInsets.all(10), // add margin in all direction
+            child:Text(
+              questionText,
+              style: TextStyle(fontSize: 28),
+              textAlign: TextAlign.center,
+                
+            ),
+        );
     }
 }
